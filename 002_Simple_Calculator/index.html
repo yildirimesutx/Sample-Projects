@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      #container{
+       
+        text-align: center;
+        margin: 100px 570px 0px 600px;
+        background-color: aquamarine;
+        width: 600px;
+        height: 150px;
+        padding-top: 50px;
+      }
      
     </style>
 </head>
 <body>
-    <div id="container">
-    <form action="">
-      <input type="text" id="number_one" placeholder="first number">
+    <div id="container">  
+      <input type="number" id="number_one" placeholder="first number">
       <input type="text" name="calcu" id="operator" placeholder="wich operator">
       <input type="number" id="number_two" placeholder="second number">
-      <button id="calcu">calculate</button>
-
-      <script src="app.js"></script>
-    </form>
+      <button id="calcu">calculate</button> 
+      <p id="sonuc">sonuç</p>
+      <p id="result"></p>
     </div>
-
-
-
-
-
-
-    
+   
+    <script src="app.js"></script>
 </body>
 </html>
