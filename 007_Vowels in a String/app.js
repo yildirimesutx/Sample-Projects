@@ -3,26 +3,22 @@ let newButton = document.getElementById("button");
 let newResult = document.getElementById("result");
 
 
-newButton.addEventListener("click", ()=>{
-    let sesli = ["a","e","i","ı","o","ö","u","ü"]
-    counter = 0
-    let b = newText.value
+let sesli = "aeiıoöuü";
+let counter = 0;
 
-    console.log(b.toString().indexOf("a"))
+newButton.addEventListener("click", ()=>{
+    
+  
+    let b = newText.value.toLowerCase();
+
+    // console.log(b.toString().indexOf("a"))
 
     for(let i=0 ; i< b.length ; i++){
-        if(0<b.toString().indexOf(sesli[i])){
-            counter++;
-        }
-         
-    else{
-        return 
+        if(sesli.includes(b[i])){
+            counter++;   
+        }       
     }
-
-}
-
     newResult.innerHTML= counter
-
 })
 
 // let s = ["a","e","i"]
@@ -30,4 +26,4 @@ newButton.addEventListener("click", ()=>{
 
 // console.log(t.toString().indexOf(s[0]));
 
-
+// let sesli = ["a","e","i","ı","o","ö","u","ü"]
