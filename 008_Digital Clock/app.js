@@ -9,7 +9,7 @@ function clock(){
     let s = d.getSeconds().toString().padStart(2,"0")
 
     newHour.innerText= h 
-    newMinutes.innerText = m
+    newMinutes.textContent = m
     newSecond.innerText = s
 }
 
