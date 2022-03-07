@@ -18,11 +18,12 @@ body{
     height: 100%; 
     font-size: 30rem;
 }
-/* .second{
-    margin: 0em 5rem 12rem 5rem;
+.second{
+    margin: 0em 5rem 16rem 5rem;
     align-self: flex-end;
     font-size: 10rem;
-} */
+   opacity: 0.3;
+}
 
 @media screen and (max-width:600px){
 
